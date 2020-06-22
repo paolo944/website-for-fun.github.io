@@ -3,7 +3,6 @@
     <head>
       <meta charset="UTF-8">
       <meta name="author" content="Paolo MEKHAIL">
-      <script src="just-for-fun.js"></script>
       <link rel="stylesheet" type="text/css" href="just-for-fun.css">
       <title>Paolo's display case</title>
     </head>
@@ -13,5 +12,18 @@
       You can get the GitHub page of the website 
       <a href="https://github.com/paolo944/website-for-fun" target="blank">here</a></p>
       <h4><a href="just-for-fun-who.html">Do you want to learn about ?</a></h4>
+      <form>
+        <label for="user-name">
+          What's your name ?<br>
+          <input id="userName" type="text" name="user-info" placeholder="Paolo">
+        </label><br>
+        <button onclick="hey()">Submit</button>
+      </form>
+      <div id="output">
+        <p></p>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+      <script src="just-for-fun.js"></script>
     </body>
 </html>
