@@ -1,21 +1,21 @@
-#ball {
+#ball > a:link, #ball > a:visited {
     border-radius: 50%;
     background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
     position: fixed;
     width: 50px;
     height: 50px;
     margin-top: 50px;
-    animation-name: mooouve;
+    animation-name: move;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     left: 10%;
     animation-timing-function: ease-out;
 }
 
-@keyframes mooouve {
+@keyframes move {
     0% {
       left: 10%;
-      top: 10%;
+      top: 5%;
       width: 55px;
       height: 45.5px;
     }
@@ -27,8 +27,68 @@
     }
     100% {
       left: 10%;
-      top: 10%;
+      top: 5%;
       width: 55px;
       height: 45.5px;
     }
 }
+
+#text-move > a:link, #text-move > a:visited{
+    color: aqua;
+    font-size: 50px;
+    position: fixed;
+    top: 40%;
+    animation-name: moving-text;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    text-decoration: none;
+}
+
+@keyframes moving-text {
+    0% {
+        left: 3%;
+    }
+    50% {
+        left: 70%;
+        color: brown;
+    }
+    100% {
+        left: 3%;
+    }
+}
+
+#insta {
+    color: crimson;
+    font-size: 25px;
+    position: fixed;
+    top: 10%;
+    left: 37%;
+    text-align: center;
+}
+
+#insta > a:link, #insta > a:visited {
+    color: crimson;
+}
+/*
+#insta > p:hover{
+   animation-name: size;
+   animation-duration: 1s;
+   animation-fill-mode: forwards;
+}
+
+@keyframes size {
+    0% {
+        color: crimson;
+    font-size: 25px;
+    position: fixed;
+    top: 10%;
+    left: 37%;
+    text-align: center;
+    }
+    100% {
+        font-size: 30px;
+        color: green;
+        
+    }
+}
+*/

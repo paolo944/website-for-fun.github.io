@@ -66,3 +66,10 @@ var app7 = new Vue({
     ]
   }
 })
+
+var appName = new Vue ({
+  el: "#app-name",
+  data: {
+    message: "Hello"
+  }
+})
