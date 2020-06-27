@@ -6,7 +6,7 @@
     height: 50px;
     margin-top: 50px;
     animation-name: move;
-    animation-duration: 4s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     left: 10%;
     animation-timing-function: ease-out;
@@ -19,12 +19,17 @@
       width: 55px;
       height: 45.5px;
     }
+    37% {
+      background: linear-gradient(35deg, red, cyan)
+    }
     50% {
       left: 90%;
       top: 80%;
-      width: 55pxx;
+      width: 55px;
       height: 45.5px;
+      background: linear-gradient(35deg, red, cyan)
     }
+
     100% {
       left: 10%;
       top: 5%;
@@ -34,7 +39,7 @@
 }
 
 #text-move > a:link, #text-move > a:visited{
-    color: aqua;
+    color: brown;
     font-size: 50px;
     position: fixed;
     top: 40%;
@@ -49,8 +54,8 @@
         left: 3%;
     }
     50% {
-        left: 70%;
-        color: brown;
+        left: 62%;
+        color: aqua;
     }
     100% {
         left: 3%;
@@ -62,14 +67,16 @@
     font-size: 25px;
     position: fixed;
     top: 10%;
-    left: 37%;
+    left: 32%;
     text-align: center;
 }
 
-#insta > a:link, #insta > a:visited {
+#button-insta:link, #button-insta:visited {
     color: crimson;
+    text-decoration: none;
+    animation-name: size;
 }
-/*
+
 #insta > p:hover{
    animation-name: size;
    animation-duration: 1s;
@@ -78,17 +85,24 @@
 
 @keyframes size {
     0% {
-        color: crimson;
+    color: crimson;
     font-size: 25px;
     position: fixed;
     top: 10%;
-    left: 37%;
     text-align: center;
     }
     100% {
         font-size: 30px;
-        color: green;
-        
+        color: black;
+
     }
 }
-*/
+
+footer {
+  position: fixed;
+  bottom: 0%;
+}
+
+body {
+  background: linear-gradient(45deg, blue, yellow);
+}
