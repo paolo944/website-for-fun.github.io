@@ -9,18 +9,17 @@
     <body>
       <h1>Welcome to my website!!!</h1>
       <p>I created this website, to show my coding and development skills.<br>
-      You can get the GitHub page of the website 
+      You can get the GitHub page of the website
       <a href="https://github.com/paolo944/website-for-fun" target="blank">here</a></p>
       <h4><a href="just-for-fun-who.html">Do you want to learn about ?</a></h4>
-      <form>
-        <label for="user-name">
-          What's your name ?<br>
-          <input id="userName" type="text" name="user-info" placeholder="Paolo">
-        </label><br>
-        <button onclick="hey()">Submit</button>
-      </form>
-      <div id="output">
-        <p></p>
+      <div id="user-name">
+        <form>
+          <label for="user-name">
+            What's your name ?<br>
+            <input id="userName" type="text" v-model="message">
+          </label><br>
+          <button v-on:click="name">Submit</button>
+        </form>
       </div>
 
       <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>

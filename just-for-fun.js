@@ -1,6 +1,11 @@
 var userName = new Vue({
-    el: "#output",
+    el: "#user-name",
     data: {
-        name: "Paolo"
+        message: "Paolo",
+    },
+    methods: {
+      name: function() {
+        alert("Hello " + this.message + "!");
     }
+  }
 })
