@@ -1,0 +1,27 @@
+.navigation-bar {
+  background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+  position: fixed;
+  height: 10%;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.navigation-bar > h4 > a:link, #navigation-bar > h4 > a:visited {
+  text-decoration: none;
+  word-spacing: 10%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0%;
+  left: 0%;
+}
+
+.button > #login {
+  top: 0%;
+  right: 5%;
+  background-color:green;
+  color: blue;
+}
